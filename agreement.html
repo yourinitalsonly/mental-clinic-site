@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
     <div class="container nav-container">
         <h1 class="logo">CalmMind Clinic</h1>
@@ -22,58 +23,60 @@
     <section class="page-header">
         <h2>Ethical User Agreement</h2>
         <p>
-            This ethical user agreement explains how technology, patient rights, and
-            professional responsibility are combined in CalmMind Clinic.
-            To continue booking your service, you must agree to the terms below.
+            Before completing your booking request, you must read and agree to the terms below.
+            These conditions ensure privacy, confidentiality, and ethical use of our system.
         </p>
     </section>
 
     <section class="agreement-section">
+
         <h3>1. Privacy and Confidentiality</h3>
         <ul class="list">
-            <li>All personal information provided through this website must be treated as confidential.</li>
-            <li>The clinic is responsible for protecting electronic records using secure systems.</li>
-            <li>Users must not share screenshots or data of other patients without written consent.</li>
+            <li>All personal information provided is confidential.</li>
+            <li>Our clinic uses secure systems to protect electronic records.</li>
+            <li>Sharing patient data without consent is prohibited.</li>
         </ul>
 
         <h3>2. Accurate and Honest Information</h3>
         <ul class="list">
-            <li>Users must provide accurate and honest information in all forms.</li>
-            <li>Impersonating another person or using a false identity is strictly prohibited.</li>
+            <li>Users must provide correct and honest information.</li>
+            <li>Impersonation or false identity is not allowed.</li>
         </ul>
 
         <h3>3. Responsible Use of Technology</h3>
         <ul class="list">
-            <li>Users agree not to attempt to hack, modify, or damage the website or its databases.</li>
-            <li>No malware, harmful files, or abusive messages may be sent through the system.</li>
-            <li>The website is used only for lawful and ethical mental health support purposes.</li>
+            <li>No attempts to hack or disrupt the website.</li>
+            <li>No harmful content or malware may be sent.</li>
+            <li>The system is to be used ethically and legally.</li>
         </ul>
 
         <h3>4. Respectful Communication</h3>
         <ul class="list">
-            <li>All messages to staff must be respectful and free from hate speech or harassment.</li>
-            <li>Abusive behavior may result in termination of access to online services.</li>
+            <li>All messages to staff must be respectful.</li>
+            <li>Hate speech or harassment is not tolerated.</li>
         </ul>
 
         <h3>5. Data Protection and Security</h3>
         <ul class="list">
-            <li>Electronic records are stored for clinical purposes only and will not be sold or misused.</li>
-            <li>Access to patient data is restricted to authorized staff following the principle of minimum access.</li>
-            <li>Users are responsible for protecting their own devices and avoiding public-session exposure.</li>
+            <li>Your data is never sold or shared unlawfully.</li>
+            <li>Access is restricted to authorized personnel only.</li>
+            <li>Users must protect their own devices.</li>
         </ul>
 
         <h3>6. Limitations and Emergency Cases</h3>
         <ul class="list">
             <li>This website is not an emergency service.</li>
-            <li>In dangerous situations, users must contact local emergency numbers.</li>
+            <li>Call local emergency numbers in dangerous situations.</li>
         </ul>
 
-        <h3>7. Acceptance of the Agreement</h3>
+        <h3>7. Agreement Confirmation</h3>
         <p>
-            To submit your booking request, you must confirm that you have read and agree to the Ethical User Agreement.
+            To proceed with your booking, please confirm that you have read and agree to
+            the Ethical User Agreement.
         </p>
 
         <form class="agreement-form" onsubmit="return confirmAgreement()">
+
             <label class="checkbox-row">
                 <input type="checkbox" id="agreeCheckbox">
                 <span>I have read and agree to the Ethical User Agreement.</span>
@@ -82,9 +85,10 @@
             <button type="submit" class="btn">Continue</button>
 
             <p class="small">
-                *This is a simulation for academic purposes only.
+                *This is a demo simulation for academic purposes only.
             </p>
         </form>
+
     </section>
 </main>
 
@@ -98,13 +102,12 @@
     function confirmAgreement() {
         const checkbox = document.getElementById('agreeCheckbox');
 
-        // المستخدم لازم يوافق غصب
         if (!checkbox.checked) {
-            alert('You must agree to the Ethical User Agreement to continue.');
+            alert("You must agree to the Ethical User Agreement to continue.");
             return false;
         }
 
-        // إذا وافق يوديه لصفحة الشكر
+        // إذا وافق → صفحة الشكر
         window.location.href = "thankyou.html";
         return false;
     }
