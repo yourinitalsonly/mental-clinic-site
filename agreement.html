@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* تحسينات خاصة بصفحة الإيثيكل فقط */
+        /* ==== تحسينات خاصة بصفحة الإيثيكل فقط ==== */
 
-        .agreement-section {
+        .agreement-page .agreement-section {
             background: #ffffff;
             padding: 2rem;
             border-radius: 16px;
@@ -17,14 +17,14 @@
             margin-bottom: 3rem;
         }
 
-        .agreement-title {
+        .agreement-page .agreement-title {
             font-size: 1.4rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
             color: #2e3a59;
         }
 
-        .line {
+        .agreement-page .line {
             width: 60px;
             height: 4px;
             background: #3b5c9a;
@@ -32,7 +32,7 @@
             margin-bottom: 1.5rem;
         }
 
-        .policy-box {
+        .agreement-page .policy-box {
             background: #f3f6fc;
             padding: 1rem 1.3rem;
             border-radius: 12px;
@@ -40,20 +40,20 @@
             border-left: 4px solid #3b5c9a;
         }
 
-        .policy-box h4 {
+        .agreement-page .policy-box h4 {
             margin-bottom: 0.5rem;
             color: #2e3a59;
         }
 
-        .policy-box ul {
+        .agreement-page .policy-box ul {
             margin-left: 1.2rem;
         }
 
-        .policy-box ul li {
+        .agreement-page .policy-box ul li {
             margin-bottom: 0.35rem;
         }
 
-        .agreement-form {
+        .agreement-page .agreement-form {
             margin-top: 1.5rem;
             background: #eef1fa;
             padding: 1.5rem;
@@ -63,7 +63,7 @@
     </style>
 </head>
 
-<body>
+<body class="agreement-page">
 
 <header>
     <div class="container nav-container">
@@ -81,8 +81,8 @@
     <section class="page-header">
         <h2>Ethical User Agreement</h2>
         <p style="max-width: 700px;">
-            Before completing your booking request, you must agree to the following terms to ensure privacy,
-            confidentiality, ethical communication, and responsible system use.
+            Before completing your booking request, you must agree to the following terms to ensure
+            privacy, confidentiality, respectful communication, and responsible use of our system.
         </p>
     </section>
 
@@ -91,7 +91,7 @@
         <div class="agreement-title">Agreement Policies</div>
         <div class="line"></div>
 
-        <!-- القسم 1 -->
+        <!-- 1 -->
         <div class="policy-box">
             <h4>1. Privacy & Confidentiality</h4>
             <ul>
@@ -101,7 +101,7 @@
             </ul>
         </div>
 
-        <!-- القسم 2 -->
+        <!-- 2 -->
         <div class="policy-box">
             <h4>2. Accurate Information</h4>
             <ul>
@@ -110,48 +110,51 @@
             </ul>
         </div>
 
-        <!-- القسم 3 -->
+        <!-- 3 -->
         <div class="policy-box">
             <h4>3. Responsible System Use</h4>
             <ul>
                 <li>No attempts to hack, modify or damage the system.</li>
                 <li>No harmful or abusive content may be sent.</li>
-                <li>The system is used for ethical and legal purposes only.</li>
+                <li>System is used for ethical and legal purposes only.</li>
             </ul>
         </div>
 
-        <!-- القسم 4 -->
+        <!-- 4 -->
         <div class="policy-box">
             <h4>4. Respectful Communication</h4>
             <ul>
-                <li>Communication must be respectful and professional.</li>
-                <li>Hate speech or harassment is not allowed.</li>
+                <li>Communication must be respectful at all times.</li>
+                <li>Hate speech or harassment is not tolerated.</li>
             </ul>
         </div>
 
-        <!-- القسم 5 -->
+        <!-- 5 -->
         <div class="policy-box">
             <h4>5. Data Protection</h4>
             <ul>
-                <li>Your data will never be sold or misused.</li>
+                <li>Your data is never sold or misused.</li>
                 <li>Access is restricted to authorized staff only.</li>
-                <li>Users must secure their own devices.</li>
+                <li>Users must keep their devices secure.</li>
             </ul>
         </div>
 
-        <!-- القسم 6 -->
+        <!-- 6 -->
         <div class="policy-box">
             <h4>6. Emergency Cases</h4>
             <ul>
                 <li>This website is not an emergency service.</li>
-                <li>Contact local emergency numbers for urgent situations.</li>
+                <li>Call local emergency numbers in urgent situations.</li>
             </ul>
         </div>
 
-        <!-- تأكيد -->
+        <!-- Confirmation -->
         <div class="agreement-form">
             <h3>Final Confirmation</h3>
-            <p>Please confirm that you have read and agree to the Ethical User Agreement.</p>
+            <p>
+                Please confirm that you have read and agree to the Ethical User Agreement
+                in order to complete your booking request.
+            </p>
 
             <form onsubmit="return confirmAgreement()">
                 <label style="display:flex; align-items:center; justify-content:center; gap:10px;">
@@ -162,7 +165,7 @@
                 <button type="submit" class="btn" style="margin-top:1rem;">Continue</button>
             </form>
 
-            <p class="small" style="margin-top:0.5rem;">*This is a simulation for academic purposes only.</p>
+            <p class="small" style="margin-top:0.5rem;">*This is a demo simulation for academic purposes only.</p>
         </div>
 
     </section>
