@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ethical User Agreement – CalmMind Clinic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">CalmMind Clinic</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="clinic.html">Our Clinic</a>
+            <a href="agreement.html" class="active">Ethical Agreement</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="page-header">
+        <h2>Ethical User Agreement</h2>
+        <p>
+            This ethical user agreement explains how technology, patient rights, and
+            professional responsibility are combined in CalmMind Clinic.
+            By using the website and any online services, the user agrees to the
+            following terms.
+        </p>
+    </section>
+
+    <section class="agreement-section">
+        <h3>1. Privacy and Confidentiality</h3>
+        <ul class="list">
+            <li>All personal information provided through this website must be treated as confidential.</li>
+            <li>The clinic is responsible for protecting electronic records using secure systems.</li>
+            <li>Users must not share screenshots or data of other patients without written consent.</li>
+        </ul>
+
+        <h3>2. Accurate and Honest Information</h3>
+        <ul class="list">
+            <li>Users must provide accurate and honest information in all forms.</li>
+            <li>Impersonating another person or using a false identity is strictly prohibited.</li>
+        </ul>
+
+        <h3>3. Responsible Use of Technology</h3>
+        <ul class="list">
+            <li>Users agree not to attempt to hack, modify, or damage the website or its databases.</li>
+            <li>No malware, harmful files, or abusive messages may be sent through the system.</li>
+            <li>The website is used only for lawful and ethical mental health support purposes.</li>
+        </ul>
+
+        <h3>4. Respectful Communication</h3>
+        <ul class="list">
+            <li>All messages to staff must be respectful and free from hate speech or harassment.</li>
+            <li>Any abusive behavior may result in termination of access to online services.</li>
+        </ul>
+
+        <h3>5. Data Protection and Security</h3>
+        <ul class="list">
+            <li>Electronic records are stored for clinical purposes only and will not be sold or misused.</li>
+            <li>Access to patient data is restricted to authorized staff following the principle of minimum access.</li>
+            <li>Users are responsible for protecting their own devices and not leaving sessions open in public places.</li>
+        </ul>
+
+        <h3>6. Limitations and Emergency Cases</h3>
+        <ul class="list">
+            <li>This website is not an emergency service.</li>
+            <li>In case of immediate danger or life-threatening situations, users must contact local emergency numbers.</li>
+        </ul>
+
+        <h3>7. Acceptance of the Agreement</h3>
+        <p>
+            By selecting "I agree" below, you confirm that you have read, understood,
+            and accept this ethical user agreement, and that you will follow all
+            the computer ethics principles mentioned above while using the system.
+        </p>
+
+        <form class="agreement-form" onsubmit="return confirmAgreement()">
+            <label class="checkbox-row">
+                <input type="checkbox" id="agreeCheckbox">
+                <span>I have read and agree to the Ethical User Agreement.</span>
+            </label>
+            <button type="submit" class="btn">I Agree (Demo)</button>
+            <p class="small">
+                *This is a simulation for academic purposes. No real account will be created.
+            </p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <p>&copy; 2025 CalmMind Mental Health Clinic – Academic Project (IT420 Computer Ethics)</p>
+    </div>
+</footer>
+
+<script>
+    function confirmAgreement() {
+        const checkbox = document.getElementById('agreeCheckbox');
+        if (!checkbox.checked) {
+            alert('Please read and accept the Ethical User Agreement before proceeding.');
+            return false;
+        }
+        alert('Thank you. Your agreement has been recorded (demo).');
+        return false; // prevent real submission – demo only
+    }
+</script>
+</body>
+</html>
