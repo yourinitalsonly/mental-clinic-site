@@ -64,25 +64,123 @@
             <p class="small">
                 Note: This website is for educational purposes only. It does not provide real
                 medical advice or emergency services.
-                <form onsubmit="return goToAgreement()">
-    <label>Full Name</label>
-    <input type="text" id="name" placeholder="Your name" required>
+   <!-- Appointment Request Form (Modern Design) -->
+<div class="appointment-form">
+    <h3>Request an Appointment</h3>
+    <p class="small">*This is a demo form for academic purposes only.</p>
 
-    <label>Email</label>
-    <input type="email" id="email" placeholder="you@example.com" required>
+    <form onsubmit="return goToAgreement()">
 
-    <label>Reason for Visit</label>
-    <select id="reason" required>
-        <option value="">Select a reason</option>
-        <option>Anxiety / Stress</option>
-        <option>Depression</option>
-        <option>Family / Relationships</option>
-        <option>Academic pressure</option>
-        <option>Other</option>
-    </select>
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+        </div>
 
-    <button type="submit" class="btn secondary">Submit Request</button>
-</form>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reason">Reason for Visit</label>
+            <select id="reason" required>
+                <option value="">Select a reason</option>
+                <option>Anxiety / Stress</option>
+                <option>Depression</option>
+                <option>Family / Relationships</option>
+                <option>Academic pressure</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Request</button>
+    </form>
+</div>
+
+<style>
+/* ===== Appointment Form Styles ===== */
+.appointment-form {
+    background: #f3f6fc;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.appointment-form h3 {
+    color: #3b5c9a;
+    margin-bottom: 0.5rem;
+}
+
+.appointment-form .small {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.appointment-form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.appointment-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #2e3a59;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 0.55rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus {
+    border-color: #3b5c9a;
+}
+
+.appointment-form .btn-primary {
+    background: #3b5c9a;
+    color: #fff;
+    border: none;
+    padding: 0.65rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.appointment-form .btn-primary:hover {
+    background: #2e467a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .appointment-form {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+}
+</style>
+
 
             </p>
         </div>
@@ -115,4 +213,5 @@ function goToAgreement() {
 
 </body>
 </html>
+
 
