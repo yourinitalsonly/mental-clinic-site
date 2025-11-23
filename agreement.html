@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* ==== تحسينات خاصة بصفحة الإيثيكل فقط ==== */
-
         .agreement-page .agreement-section {
             background: #ffffff;
             padding: 2rem;
@@ -64,20 +62,18 @@
 </head>
 
 <body class="agreement-page">
-
 <header>
     <div class="container nav-container">
         <h1 class="logo">CalmMind Clinic</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="clinic.html">Our Clinic</a>
+            <a href="services.html">Services</a>
             <a href="agreement.html" class="active">Ethical Agreement</a>
         </nav>
     </div>
 </header>
 
 <main class="container">
-    
     <section class="page-header">
         <h2>Ethical User Agreement</h2>
         <p style="max-width: 700px;">
@@ -91,18 +87,16 @@
         <div class="agreement-title">Agreement Policies</div>
         <div class="line"></div>
 
-        <!-- 1 -->
+        <!-- Policy boxes -->
         <div class="policy-box">
             <h4>1. Privacy & Confidentiality</h4>
             <ul>
                 <li>All personal and session information will remain confidential.</li>
                 <li>Data shared on this platform is used only to support mental-health services.</li>
-                <li>Information will not be shared without explicit user consent, except when required by law.
-</li>
+                <li>Information will not be shared without explicit user consent, except when required by law.</li>
             </ul>
         </div>
 
-        <!-- 2 -->
         <div class="policy-box">
             <h4>2. Responsible Use of Technology</h4>
             <ul>
@@ -112,7 +106,6 @@
             </ul>
         </div>
 
-        <!-- 3 -->
         <div class="policy-box">
             <h4>3. Transparency & Informed Consent</h4>
             <ul>
@@ -122,7 +115,6 @@
             </ul>
         </div>
 
-        <!-- 4 -->
         <div class="policy-box">
             <h4>4. Professional & Respectful Interaction</h4>
             <ul>
@@ -131,56 +123,43 @@
             </ul>
         </div>
 
-        <!-- 5 -->
         <div class="policy-box">
             <h4>5. Secure Data Handling</h4>
             <ul>
                 <li>All personal and session data is protected according to ethical and legal standards.</li>
                 <li>Information will never be sold, shared without consent, or misused.</li>
                 <li>Access is restricted to authorized staff, and users must maintain the security of their own devices.</li>
-                 <li>Adhering to these practices is essential to upholding the Ethical User Agreement and maintaining trust.</li> 
             </ul>
         </div>
 
-        <!-- 6 -->
         <div class="policy-box">
             <h4>6. Emergency Awareness</h4>
             <ul>
                 <li>CalmMind Clinic is not an emergency service and cannot replace urgent mental-health or medical care.</li>
                 <li>Users must contact local emergency services if immediate assistance is required.</li>
-                <li>Understanding these limitations and acting responsibly aligns with the Ethical User Agreement and safe 
-                    use of digital health resources.</li>
-
+                <li>Understanding these limitations and acting responsibly aligns with the Ethical User Agreement and safe use of digital health resources.</li>
             </ul>
         </div>
 
         <!-- Confirmation -->
         <div class="agreement-form">
             <h3>Final Confirmation</h3>
-            
-           <p style="max-width: 700px; color:#3b5c9a;">
-    Please confirm that you have read and agree to the Ethical User Agreement
-    in order to complete your booking request.
-</p>
-
-            
-        
+            <p style="max-width: 700px; color:#3b5c9a;">
+                Please confirm that you have read and agree to the Ethical User Agreement
+                in order to complete your booking request.
+            </p>
 
             <form onsubmit="return confirmAgreement()">
-               <div class="checkbox-wrapper">
-    <input type="checkbox" id="agreeCheckbox">
-    <label for="agreeCheckbox">I agree to the Ethical User Agreement</label>
-</div>
-
-
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="agreeCheckbox">
+                    <label for="agreeCheckbox">I agree to the Ethical User Agreement</label>
+                </div>
                 <button type="submit" class="btn" style="margin-top:1rem;">Continue</button>
             </form>
 
             <p class="small" style="margin-top:0.5rem;">*This is a demo simulation for academic purposes only.</p>
         </div>
-
     </section>
-
 </main>
 
 <footer>
@@ -192,26 +171,13 @@
 <script>
 function confirmAgreement() {
     const checkbox = document.getElementById('agreeCheckbox');
-
     if (!checkbox.checked) {
         alert("You must agree to the Ethical User Agreement to continue.");
         return false;
     }
-
-    // Redirect to thank-you page
-    window.location.href = "thankyou.html";  // <- THIS LINE
+    window.location.href = "thankyou.html";
     return false;
 }
 </script>
-
-
 </body>
 </html>
-
-
-
-
-
-
-
-
