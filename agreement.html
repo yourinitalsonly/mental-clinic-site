@@ -180,19 +180,22 @@
 </footer>
 
 <script>
-    function confirmAgreement() {
-        const checkbox = document.getElementById('agreeCheckbox');
+function confirmAgreement() {
+    const checkbox = document.getElementById('agreeCheckbox');
 
-        if (!checkbox.checked) {
-            alert("You must agree to the Ethical User Agreement to continue.");
-            return false;
-        }
-
-        window.location.href = "thankyou.html";
+    if (!checkbox.checked) {
+        alert("You must agree to the Ethical User Agreement to continue.");
         return false;
     }
+
+    // Redirect to thank-you page
+    window.location.href = "thankyou.html";  // <- THIS LINE
+    return false;
+}
 </script>
+
 
 </body>
 </html>
+
 
