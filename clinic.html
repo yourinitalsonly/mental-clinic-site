@@ -64,6 +64,26 @@
             <p class="small">
                 Note: This website is for educational purposes only. It does not provide real
                 medical advice or emergency services.
+                <form onsubmit="return goToAgreement()">
+    <label>Full Name</label>
+    <input type="text" id="name" placeholder="Your name" required>
+
+    <label>Email</label>
+    <input type="email" id="email" placeholder="you@example.com" required>
+
+    <label>Reason for Visit</label>
+    <select id="reason" required>
+        <option value="">Select a reason</option>
+        <option>Anxiety / Stress</option>
+        <option>Depression</option>
+        <option>Family / Relationships</option>
+        <option>Academic pressure</option>
+        <option>Other</option>
+    </select>
+
+    <button type="submit" class="btn secondary">Submit Request</button>
+</form>
+
             </p>
         </div>
     </section>
@@ -81,5 +101,18 @@
         <p>&copy; 2025 CalmMind Mental Health Clinic – Academic Project (IT420 Computer Ethics)</p>
     </div>
 </footer>
+    <script>
+function goToAgreement() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const reason = document.getElementById('reason').value;
+
+    // send data to agreement.html using URL parameters
+    window.location.href = `agreement.html?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&reason=${encodeURIComponent(reason)}`;
+    return false;
+}
+</script>
+
 </body>
 </html>
+
