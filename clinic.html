@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CalmMind Mental Health Clinic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">CalmMind Clinic</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="clinic.html">Our Clinic</a>
+            <a href="agreement.html">Ethical Agreement</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+
+        <!-- النص التعريفي -->
+        <div class="hero-text">
+            <h2>Your Mental Health Matters</h2>
+            <p>
+                CalmMind Clinic provides safe, confidential, and ethical psychological support.
+                Please fill out the short form to request an appointment.
+            </p>
+        </div>
+
+        <!-- الفورم الحقيقي -->
+        <div class="hero-box">
+            <h3>Appointment Request</h3>
+            <p class="small">
+                *This is a demo form for academic purposes only.
+            </p>
+
+            <form onsubmit="return goToAgreement()">
+
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label>Email</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+
+                <label>Reason for Visit</label>
+                <select id="reason" required>
+                    <option value="">Select a reason</option>
+                    <option>Anxiety / Stress</option>
+                    <option>Depression</option>
+                    <option>Family / Relationships</option>
+                    <option>Academic pressure</option>
+                    <option>Other</option>
+                </select>
+
+                <button type="submit" class="btn secondary">Submit Request</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="cards">
+        <article class="card">
+            <h3>Our Values</h3>
+            <p>
+                We follow strict computer ethics to protect patient information and privacy.
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Online Services</h3>
+            <p>
+                All online consultations use secure encrypted communication platforms.
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Ethical Agreement</h3>
+            <p>
+                You must agree to the ethical user agreement before completing your booking.
+            </p>
+            <a href="agreement.html" class="link">Read the agreement →</a>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <p>&copy; 2025 CalmMind Mental Health Clinic – Academic Project</p>
+    </div>
+</footer>
+
+<script>
+    function goToAgreement() {
+        // Just move user to agreement page (we don't store data)
+        window.location.href = "agreement.html";
+        return false;
+    }
+</script>
+
+</body>
+</html>
